@@ -1,0 +1,1553 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BT 1024 7086 失效_资源索引更新_社区共建影像平台</title>
+<meta name="description" content="BT 1024 7086 失效是社区共建的资源索引议题，本官方网站持续汇总链接失效反馈、镜像校验与创作者原创内容，打造值得信赖的内容生态。">
+<meta name="keywords" content="BT 1024 7086 失效,资源索引,失效反馈,官方网站,创作者社区">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f1b2d'/%3E%3Cpath d='M20 44V20h10a8 8 0 010 16H20' stroke='%233fe0a8' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='46' cy='26' r='4' fill='%23ffb648'/%3E%3C/svg%3E">
+<style>
+:root{
+  --nk-bg:#0d1521;
+  --nk-bg2:#121e2e;
+  --nk-card:#16243a;
+  --nk-card2:#1b2c45;
+  --nk-line:rgba(255,255,255,.09);
+  --nk-text:#e8eef7;
+  --nk-sub:#9db0c9;
+  --nk-dim:#6f849f;
+  --nk-mint:#3fe0a8;
+  --nk-amber:#ffb648;
+  --nk-blue:#4ea8ff;
+  --nk-radius:16px;
+  --nk-head:104px;
+  --nk-shadow:0 18px 40px rgba(0,0,0,.32);
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nk-head) + 16px);}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:var(--nk-bg);
+  color:var(--nk-text);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit;}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700;}
+p{margin:0 0 1em;}
+.nk-wrap{width:min(1200px,92%);margin:0 auto;}
+.nk-fixed-top{position:fixed;top:0;left:0;right:0;z-index:60;}
+
+/* 公告条 */
+.nk-notice{
+  background:linear-gradient(90deg,#14253a,#1c3350 55%,#152a42);
+  border-bottom:1px solid var(--nk-line);
+  font-size:13px;
+  padding:9px 0;
+}
+.nk-notice .nk-wrap{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+.nk-notice-badge{
+  background:var(--nk-amber);color:#1a1206;font-weight:700;
+  padding:2px 10px;border-radius:20px;font-size:12px;letter-spacing:.4px;white-space:nowrap;
+}
+.nk-notice-text{color:#c3d4e8;flex:1;min-width:200px;}
+.nk-notice-text b{color:var(--nk-mint);font-weight:600;}
+.nk-notice-link{color:var(--nk-mint);white-space:nowrap;font-weight:600;border-bottom:1px dashed rgba(63,224,168,.5);padding-bottom:1px;}
+.nk-notice-link:hover{color:#fff;border-color:#fff;}
+
+/* 页头 */
+.nk-header{
+  background:rgba(13,21,33,.93);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--nk-line);
+}
+.nk-header-inner{
+  display:flex;align-items:center;gap:26px;
+  padding:14px 0;flex-wrap:wrap;
+}
+.nk-logo{display:flex;align-items:center;gap:11px;flex-shrink:0;}
+.nk-logo-mark{
+  width:42px;height:42px;border-radius:12px;flex-shrink:0;
+  background:linear-gradient(140deg,#1d3a57,#0f2236);
+  border:1px solid rgba(63,224,168,.45);
+  display:grid;place-items:center;box-shadow:0 0 0 4px rgba(63,224,168,.07);
+}
+.nk-logo-mark svg{width:24px;height:24px;}
+.nk-logo-text strong{display:block;font-size:17px;letter-spacing:.5px;}
+.nk-logo-text span{display:block;font-size:11px;color:var(--nk-dim);letter-spacing:1.6px;text-transform:uppercase;}
+.nk-nav{display:flex;gap:4px;flex-wrap:wrap;margin-left:8px;}
+.nk-nav a{
+  font-size:14px;color:var(--nk-sub);padding:8px 12px;border-radius:9px;
+  transition:.2s;white-space:nowrap;
+}
+.nk-nav a:hover{color:#fff;background:rgba(255,255,255,.06);}
+.nk-nav a.nk-active{color:var(--nk-mint);background:rgba(63,224,168,.1);}
+.nk-header-tools{display:flex;align-items:center;gap:10px;margin-left:auto;}
+.nk-search{
+  display:flex;align-items:center;gap:8px;
+  background:var(--nk-card);border:1px solid var(--nk-line);
+  border-radius:11px;padding:7px 12px;width:236px;transition:.2s;
+}
+.nk-search:focus-within{border-color:rgba(63,224,168,.6);box-shadow:0 0 0 3px rgba(63,224,168,.1);}
+.nk-search input{
+  background:none;border:0;outline:0;color:var(--nk-text);font-size:13.5px;width:100%;
+}
+.nk-search input::placeholder{color:var(--nk-dim);}
+.nk-search button{color:var(--nk-mint);font-size:13px;white-space:nowrap;}
+.nk-search-feedback{
+  font-size:12px;color:var(--nk-amber);width:100%;margin-top:6px;display:none;
+}
+.nk-search-feedback.nk-show{display:block;}
+.nk-burger{
+  display:none;width:42px;height:42px;border-radius:11px;
+  border:1px solid var(--nk-line);background:var(--nk-card);
+  align-items:center;justify-content:center;flex-direction:column;gap:4px;
+}
+.nk-burger span{display:block;width:18px;height:2px;background:var(--nk-text);border-radius:2px;transition:.25s;}
+.nk-burger.nk-open span:nth-child(1){transform:translateY(6px) rotate(45deg);}
+.nk-burger.nk-open span:nth-child(2){opacity:0;}
+.nk-burger.nk-open span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
+
+/* 通用按钮 */
+.nk-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:7px;
+  padding:11px 22px;border-radius:11px;font-size:14px;font-weight:600;
+  transition:.2s;border:1px solid transparent;white-space:nowrap;
+}
+.nk-btn-primary{background:var(--nk-mint);color:#08211a;}
+.nk-btn-primary:hover{background:#5ff0bd;transform:translateY(-1px);}
+.nk-btn-ghost{border-color:var(--nk-line);color:var(--nk-text);background:rgba(255,255,255,.04);}
+.nk-btn-ghost:hover{border-color:rgba(63,224,168,.55);color:var(--nk-mint);}
+.nk-btn-amber{background:var(--nk-amber);color:#1b1204;}
+.nk-btn-amber:hover{background:#ffc76e;transform:translateY(-1px);}
+
+/* 首屏 */
+.nk-hero{padding:calc(var(--nk-head) + 42px) 0 64px;position:relative;overflow:hidden;}
+.nk-hero::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(620px 380px at 82% 8%,rgba(63,224,168,.16),transparent 65%),
+    radial-gradient(520px 340px at 8% 92%,rgba(78,168,255,.14),transparent 62%);
+  pointer-events:none;
+}
+.nk-hero-grid{display:grid;grid-template-columns:6fr 4fr;gap:44px;align-items:center;position:relative;}
+.nk-hero-tag{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;
+  color:var(--nk-mint);border:1px solid rgba(63,224,168,.35);
+  background:rgba(63,224,168,.08);padding:5px 13px;border-radius:20px;margin-bottom:18px;
+}
+.nk-hero-tag i{width:6px;height:6px;border-radius:50%;background:var(--nk-mint);font-style:normal;box-shadow:0 0 8px var(--nk-mint);}
+.nk-hero h1{font-size:clamp(30px,4vw,46px);letter-spacing:-.5px;margin-bottom:16px;}
+.nk-hero h1 em{font-style:normal;color:var(--nk-mint);}
+.nk-hero-lead{font-size:15.5px;color:var(--nk-sub);max-width:640px;}
+.nk-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0 30px;}
+.nk-hero-stats{display:flex;gap:34px;flex-wrap:wrap;border-top:1px solid var(--nk-line);padding-top:22px;}
+.nk-hero-stat b{display:block;font-size:26px;color:#fff;letter-spacing:-.5px;}
+.nk-hero-stat b span{font-size:14px;color:var(--nk-mint);margin-left:2px;}
+.nk-hero-stat small{font-size:12.5px;color:var(--nk-dim);}
+.nk-hero-visual{position:relative;}
+.nk-hero-shot{
+  border-radius:20px;overflow:hidden;border:1px solid var(--nk-line);
+  box-shadow:var(--nk-shadow);position:relative;background:var(--nk-card);
+}
+.nk-hero-shot img{aspect-ratio:16/10;object-fit:cover;width:100%;}
+.nk-hero-float{
+  position:absolute;bottom:-20px;left:-18px;background:var(--nk-card2);
+  border:1px solid var(--nk-line);border-radius:14px;padding:12px 16px;
+  box-shadow:var(--nk-shadow);display:flex;align-items:center;gap:12px;max-width:270px;
+}
+.nk-hero-float .nk-play-dot{
+  width:36px;height:36px;border-radius:50%;flex-shrink:0;
+  background:rgba(63,224,168,.15);display:grid;place-items:center;color:var(--nk-mint);
+}
+.nk-hero-float strong{display:block;font-size:13px;}
+.nk-hero-float small{font-size:11.5px;color:var(--nk-dim);}
+
+/* 区块通用 */
+.nk-section{padding:64px 0;}
+.nk-section-alt{background:var(--nk-bg2);border-top:1px solid var(--nk-line);border-bottom:1px solid var(--nk-line);}
+.nk-sec-head{margin-bottom:34px;max-width:760px;}
+.nk-sec-kicker{
+  display:inline-block;font-size:12px;letter-spacing:2.2px;color:var(--nk-mint);
+  text-transform:uppercase;margin-bottom:10px;font-weight:600;
+}
+.nk-sec-head h2{font-size:clamp(23px,2.6vw,31px);margin-bottom:10px;}
+.nk-sec-head p{color:var(--nk-sub);font-size:14.5px;margin:0;}
+.nk-sec-head-row{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;}
+
+/* 深度解析 */
+.nk-analyze{display:grid;grid-template-columns:1.35fr 1fr;gap:40px;align-items:start;}
+.nk-prose p{color:#c3d0e1;font-size:15px;text-align:justify;}
+.nk-prose h3{font-size:17px;margin:26px 0 10px;color:#fff;padding-left:12px;border-left:3px solid var(--nk-mint);}
+.nk-prose strong{color:var(--nk-mint);font-weight:600;}
+.nk-side-card{
+  background:var(--nk-card);border:1px solid var(--nk-line);border-radius:var(--nk-radius);
+  padding:22px;margin-bottom:16px;
+}
+.nk-side-card h4{font-size:14.5px;margin-bottom:14px;color:#fff;}
+.nk-timeline{list-style:none;padding:0;margin:0;}
+.nk-timeline li{position:relative;padding:0 0 16px 22px;border-left:1px solid var(--nk-line);margin-left:5px;}
+.nk-timeline li:last-child{padding-bottom:0;border-left-color:transparent;}
+.nk-timeline li::before{
+  content:"";position:absolute;left:-4.5px;top:7px;width:8px;height:8px;border-radius:50%;
+  background:var(--nk-mint);box-shadow:0 0 0 3px rgba(63,224,168,.16);
+}
+.nk-timeline time{display:block;font-size:11.5px;color:var(--nk-dim);letter-spacing:.4px;}
+.nk-timeline p{margin:2px 0 0;font-size:13.5px;color:var(--nk-sub);}
+.nk-keywords{display:flex;flex-wrap:wrap;gap:8px;}
+.nk-keyword{
+  font-size:12.5px;padding:5px 12px;border-radius:20px;
+  background:rgba(78,168,255,.1);color:#8fc6ff;border:1px solid rgba(78,168,255,.22);
+}
+.nk-keyword.nk-hot{background:rgba(255,182,72,.1);color:var(--nk-amber);border-color:rgba(255,182,72,.28);}
+
+/* 焦点内容 */
+.nk-feature-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:22px;}
+.nk-feature-main{
+  border-radius:20px;overflow:hidden;position:relative;border:1px solid var(--nk-line);
+  background:var(--nk-card);box-shadow:var(--nk-shadow);
+}
+.nk-feature-main img{aspect-ratio:16/9;width:100%;object-fit:cover;transition:.5s;}
+.nk-feature-main:hover img{transform:scale(1.035);}
+.nk-feature-caption{
+  position:absolute;left:0;right:0;bottom:0;padding:26px 24px 22px;
+  background:linear-gradient(to top,rgba(8,14,23,.94),rgba(8,14,23,.5) 55%,transparent);
+}
+.nk-video-badge{
+  display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;
+  background:rgba(63,224,168,.16);color:var(--nk-mint);border:1px solid rgba(63,224,168,.35);
+  padding:3px 10px;border-radius:16px;margin-bottom:9px;
+}
+.nk-feature-caption h3{font-size:20px;margin-bottom:7px;}
+.nk-feature-caption p{margin:0;font-size:13px;color:var(--nk-sub);}
+.nk-feature-meta{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--nk-dim);margin-top:12px;}
+.nk-feature-side{display:grid;gap:14px;align-content:start;}
+.nk-mini-card{
+  display:grid;grid-template-columns:118px 1fr;gap:14px;align-items:center;
+  background:var(--nk-card);border:1px solid var(--nk-line);border-radius:14px;
+  padding:11px;transition:.22s;
+}
+.nk-mini-card:hover{border-color:rgba(63,224,168,.4);transform:translateX(3px);}
+.nk-mini-card img{aspect-ratio:16/10;object-fit:cover;border-radius:9px;width:100%;}
+.nk-mini-card h4{font-size:14px;margin-bottom:5px;}
+.nk-mini-card span{font-size:12px;color:var(--nk-dim);}
+
+/* 视频流卡片 */
+.nk-feed-filter{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px;}
+.nk-chip{
+  font-size:13px;padding:7px 16px;border-radius:20px;border:1px solid var(--nk-line);
+  color:var(--nk-sub);background:var(--nk-card);transition:.2s;
+}
+.nk-chip:hover{color:#fff;border-color:rgba(255,255,255,.25);}
+.nk-chip.nk-on{background:var(--nk-mint);color:#08211a;border-color:var(--nk-mint);font-weight:600;}
+.nk-feed{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.nk-vcard{
+  background:var(--nk-card);border:1px solid var(--nk-line);border-radius:var(--nk-radius);
+  overflow:hidden;transition:.25s;display:flex;flex-direction:column;
+}
+.nk-vcard:hover{transform:translateY(-5px);border-color:rgba(63,224,168,.38);box-shadow:var(--nk-shadow);}
+.nk-vcard-cover{position:relative;overflow:hidden;}
+.nk-vcard-cover img{aspect-ratio:16/9;width:100%;object-fit:cover;transition:.5s;}
+.nk-vcard:hover .nk-vcard-cover img{transform:scale(1.06);}
+.nk-vcard-cover::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(7,12,20,.5),transparent 58%);
+}
+.nk-cover-play{
+  position:absolute;inset:0;display:grid;place-items:center;z-index:2;
+  opacity:0;transition:.25s;
+}
+.nk-vcard:hover .nk-cover-play{opacity:1;}
+.nk-cover-play i{
+  width:46px;height:46px;border-radius:50%;background:rgba(63,224,168,.9);
+  display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,.4);
+}
+.nk-cover-dur{
+  position:absolute;right:9px;bottom:9px;z-index:2;font-size:11.5px;
+  background:rgba(6,11,18,.8);padding:2px 8px;border-radius:6px;color:#dbe7f5;
+}
+.nk-vcard-body{padding:15px 16px 16px;display:flex;flex-direction:column;flex:1;}
+.nk-vcard-body h3{font-size:15.5px;margin-bottom:7px;}
+.nk-vcard-body .nk-sum{font-size:13px;color:var(--nk-sub);margin:0 0 12px;flex:1;}
+.nk-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px;}
+.nk-tag{font-size:11.5px;color:var(--nk-blue);background:rgba(78,168,255,.1);padding:2px 9px;border-radius:6px;}
+.nk-vcard-foot{
+  display:flex;align-items:center;gap:9px;border-top:1px solid var(--nk-line);padding-top:12px;
+}
+.nk-ava{
+  width:28px;height:28px;border-radius:50%;flex-shrink:0;display:grid;place-items:center;
+  font-size:12px;font-weight:700;color:#08211a;
+}
+.nk-vcard-author{font-size:12.5px;color:var(--nk-sub);flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.nk-act{
+  display:inline-flex;align-items:center;gap:4px;font-size:12px;color:var(--nk-dim);
+  padding:4px 7px;border-radius:7px;transition:.18s;
+}
+.nk-act:hover{background:rgba(255,255,255,.06);color:#fff;}
+.nk-act.nk-liked{color:var(--nk-amber);}
+.nk-act.nk-saved{color:var(--nk-mint);}
+.nk-act svg{width:14px;height:14px;}
+
+/* 创作者 */
+.nk-creators{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+.nk-creator{
+  background:var(--nk-card);border:1px solid var(--nk-line);border-radius:var(--nk-radius);
+  padding:22px 18px;text-align:center;transition:.24s;
+}
+.nk-creator:hover{transform:translateY(-4px);border-color:rgba(255,182,72,.42);}
+.nk-creator .nk-ava-lg{
+  width:62px;height:62px;border-radius:50%;margin:0 auto 13px;display:grid;place-items:center;
+  font-size:22px;font-weight:700;color:#08211a;
+}
+.nk-creator h3{font-size:15.5px;margin-bottom:4px;}
+.nk-creator .nk-field{font-size:12px;color:var(--nk-mint);margin-bottom:9px;}
+.nk-creator p{font-size:12.5px;color:var(--nk-sub);margin:0 0 13px;min-height:54px;}
+.nk-creator-stats{display:flex;justify-content:center;gap:16px;font-size:11.5px;color:var(--nk-dim);border-top:1px solid var(--nk-line);padding-top:12px;}
+.nk-creator-stats b{display:block;color:#fff;font-size:14px;}
+.nk-more{
+  display:inline-flex;align-items:center;gap:5px;margin-top:13px;font-size:12.5px;
+  color:var(--nk-amber);
+}
+.nk-more:hover{text-decoration:underline;}
+
+/* 专题 */
+.nk-topics{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.nk-topic{
+  border-radius:var(--nk-radius);overflow:hidden;border:1px solid var(--nk-line);
+  background:var(--nk-card);position:relative;transition:.24s;
+}
+.nk-topic:hover{border-color:rgba(78,168,255,.45);}
+.nk-topic img{aspect-ratio:16/9;width:100%;object-fit:cover;}
+.nk-topic-body{padding:16px 17px 18px;}
+.nk-topic-status{
+  display:inline-block;font-size:11px;padding:2px 9px;border-radius:5px;
+  background:rgba(63,224,168,.13);color:var(--nk-mint);margin-bottom:9px;
+}
+.nk-topic-status.nk-soon{background:rgba(255,182,72,.13);color:var(--nk-amber);}
+.nk-topic h3{font-size:16px;margin-bottom:7px;}
+.nk-topic p{font-size:12.8px;color:var(--nk-sub);margin:0;}
+
+/* 故事随笔 */
+.nk-stories{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.nk-story{
+  background:var(--nk-card);border:1px solid var(--nk-line);border-radius:var(--nk-radius);
+  padding:22px;border-left:3px solid var(--nk-mint);
+}
+.nk-story:nth-child(2){border-left-color:var(--nk-amber);}
+.nk-story:nth-child(3){border-left-color:var(--nk-blue);}
+.nk-story h3{font-size:15.5px;margin-bottom:9px;}
+.nk-story p{font-size:13.2px;color:var(--nk-sub);margin:0 0 12px;}
+.nk-story .nk-story-by{font-size:12px;color:var(--nk-dim);}
+
+/* 评价 */
+.nk-reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.nk-review{
+  background:var(--nk-card);border:1px solid var(--nk-line);border-radius:14px;
+  padding:18px;position:relative;
+}
+.nk-review::before{
+  content:"“";position:absolute;right:16px;top:2px;font-size:44px;
+  color:rgba(63,224,168,.16);font-family:Georgia,serif;line-height:1;
+}
+.nk-review p{font-size:13.5px;color:#cfdaea;margin:0 0 14px;}
+.nk-review-by{display:flex;align-items:center;gap:9px;}
+.nk-review-by .nk-ava{width:30px;height:30px;font-size:12px;}
+.nk-review-by strong{display:block;font-size:12.5px;}
+.nk-review-by small{font-size:11px;color:var(--nk-dim);}
+.nk-stars{color:var(--nk-amber);font-size:11.5px;letter-spacing:1.5px;margin-bottom:8px;}
+
+/* 榜单 */
+.nk-rank-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.nk-rank{
+  background:var(--nk-card);border:1px solid var(--nk-line);border-radius:var(--nk-radius);
+  padding:20px;
+}
+.nk-rank h3{font-size:15px;margin-bottom:14px;display:flex;align-items:center;gap:8px;}
+.nk-rank h3 span{
+  width:22px;height:22px;border-radius:6px;background:rgba(63,224,168,.14);
+  color:var(--nk-mint);display:grid;place-items:center;font-size:12px;
+}
+.nk-rank ol{list-style:none;margin:0;padding:0;counter-reset:rk;}
+.nk-rank li{
+  counter-increment:rk;display:flex;gap:10px;align-items:baseline;
+  padding:8px 0;border-bottom:1px dashed var(--nk-line);font-size:13px;
+}
+.nk-rank li:last-child{border-bottom:0;}
+.nk-rank li::before{
+  content:counter(rk);font-size:11.5px;font-weight:700;color:var(--nk-dim);
+  width:17px;flex-shrink:0;
+}
+.nk-rank li:nth-child(1)::before{color:var(--nk-amber);}
+.nk-rank li:nth-child(2)::before{color:#c9d6e6;}
+.nk-rank li:nth-child(3)::before{color:#d9a06a;}
+.nk-rank li span{flex:1;color:#d5e0ee;}
+.nk-rank li small{color:var(--nk-dim);font-size:11.5px;}
+
+/* 动态 */
+.nk-news{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.nk-news-item{
+  background:var(--nk-card);border:1px solid var(--nk-line);border-radius:14px;
+  padding:18px;transition:.2s;
+}
+.nk-news-item:hover{border-color:rgba(78,168,255,.4);}
+.nk-news-item time{font-size:11.5px;color:var(--nk-mint);letter-spacing:.5px;}
+.nk-news-item h3{font-size:14.5px;margin:8px 0 7px;}
+.nk-news-item p{font-size:12.8px;color:var(--nk-sub);margin:0;}
+
+/* FAQ */
+.nk-faq{max-width:860px;}
+.nk-faq details{
+  background:var(--nk-card);border:1px solid var(--nk-line);border-radius:12px;
+  margin-bottom:10px;padding:0 18px;transition:.2s;
+}
+.nk-faq details[open]{border-color:rgba(63,224,168,.4);}
+.nk-faq summary{
+  cursor:pointer;padding:15px 0;font-size:14.5px;font-weight:600;list-style:none;
+  display:flex;justify-content:space-between;gap:14px;align-items:center;
+}
+.nk-faq summary::-webkit-details-marker{display:none;}
+.nk-faq summary::after{content:"+";color:var(--nk-mint);font-size:19px;font-weight:400;transition:.2s;}
+.nk-faq details[open] summary::after{transform:rotate(45deg);}
+.nk-faq p{font-size:13.5px;color:var(--nk-sub);margin:0 0 16px;padding-right:24px;}
+
+/* 联系 */
+.nk-contact{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;}
+.nk-contact-list{list-style:none;margin:0;padding:0;}
+.nk-contact-list li{
+  display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--nk-line);
+  font-size:13.5px;color:var(--nk-sub);
+}
+.nk-contact-list li:last-child{border-bottom:0;}
+.nk-contact-list b{color:#fff;font-weight:600;display:block;margin-bottom:2px;}
+.nk-contact-ico{
+  width:34px;height:34px;border-radius:9px;flex-shrink:0;display:grid;place-items:center;
+  background:rgba(63,224,168,.1);color:var(--nk-mint);
+}
+.nk-contact-box{
+  background:var(--nk-card);border:1px solid var(--nk-line);border-radius:var(--nk-radius);
+  padding:28px;text-align:center;
+}
+.nk-contact-box h3{font-size:18px;margin-bottom:10px;}
+.nk-contact-box p{font-size:13.5px;color:var(--nk-sub);}
+.nk-contact-box .nk-btn{margin-top:6px;}
+
+/* 页脚 */
+.nk-footer{background:#091019;border-top:1px solid var(--nk-line);padding:46px 0 26px;}
+.nk-footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:32px;margin-bottom:34px;}
+.nk-footer h4{font-size:13.5px;margin-bottom:14px;color:#fff;letter-spacing:.4px;}
+.nk-footer p{font-size:12.8px;color:var(--nk-dim);margin:0 0 10px;}
+.nk-footer ul{list-style:none;margin:0;padding:0;}
+.nk-footer ul li{margin-bottom:9px;}
+.nk-footer ul a{font-size:12.8px;color:var(--nk-dim);transition:.18s;}
+.nk-footer ul a:hover{color:var(--nk-mint);}
+.nk-footer-bottom{
+  border-top:1px solid var(--nk-line);padding-top:20px;display:flex;
+  justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--nk-dim);
+}
+
+/* 回到顶部 */
+.nk-top-btn{
+  position:fixed;right:22px;bottom:24px;width:44px;height:44px;border-radius:12px;
+  background:var(--nk-card2);border:1px solid var(--nk-line);color:var(--nk-mint);
+  display:grid;place-items:center;opacity:0;pointer-events:none;transition:.25s;z-index:50;
+  box-shadow:var(--nk-shadow);
+}
+.nk-top-btn.nk-show{opacity:1;pointer-events:auto;}
+.nk-top-btn:hover{border-color:var(--nk-mint);transform:translateY(-2px);}
+
+/* Toast */
+.nk-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+  background:#1e334d;border:1px solid rgba(63,224,168,.4);color:#eaf3ff;
+  font-size:13px;padding:11px 20px;border-radius:11px;box-shadow:var(--nk-shadow);
+  opacity:0;pointer-events:none;transition:.3s;z-index:90;
+}
+.nk-toast.nk-show{opacity:1;transform:translate(-50%,0);}
+
+/* Modal */
+.nk-modal{
+  position:fixed;inset:0;background:rgba(5,9,15,.72);backdrop-filter:blur(4px);
+  display:none;place-items:center;z-index:100;padding:20px;
+}
+.nk-modal.nk-open{display:grid;}
+.nk-modal-card{
+  background:var(--nk-bg2);border:1px solid var(--nk-line);border-radius:18px;
+  width:min(520px,100%);padding:28px;position:relative;box-shadow:var(--nk-shadow);
+  animation:nkPop .22s ease;
+}
+@keyframes nkPop{from{transform:translateY(14px);opacity:.6;}to{transform:none;opacity:1;}}
+.nk-modal-card h3{font-size:18px;margin-bottom:12px;padding-right:30px;}
+.nk-modal-card p{font-size:13.5px;color:var(--nk-sub);}
+.nk-modal-close{
+  position:absolute;right:16px;top:14px;width:30px;height:30px;border-radius:8px;
+  display:grid;place-items:center;color:var(--nk-sub);font-size:18px;
+}
+.nk-modal-close:hover{background:rgba(255,255,255,.07);color:#fff;}
+.nk-modal-card textarea,.nk-modal-card input[type=text]{
+  width:100%;background:var(--nk-card);border:1px solid var(--nk-line);border-radius:10px;
+  color:var(--nk-text);padding:11px 13px;font-size:13.5px;font-family:inherit;outline:0;
+  margin-bottom:12px;resize:vertical;
+}
+.nk-modal-card textarea:focus,.nk-modal-card input[type=text]:focus{border-color:rgba(63,224,168,.55);}
+.nk-share-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px;}
+.nk-share-row button{
+  padding:9px 16px;border-radius:10px;background:var(--nk-card);border:1px solid var(--nk-line);
+  font-size:13px;transition:.2s;
+}
+.nk-share-row button:hover{border-color:var(--nk-mint);color:var(--nk-mint);}
+
+@media (max-width:1024px){
+  .nk-hero-grid{grid-template-columns:1fr;gap:38px;}
+  .nk-analyze{grid-template-columns:1fr;}
+  .nk-feature-grid{grid-template-columns:1fr;}
+  .nk-creators{grid-template-columns:repeat(2,1fr);}
+  .nk-topics,.nk-stories,.nk-reviews,.nk-rank-grid,.nk-news{grid-template-columns:repeat(2,1fr);}
+  .nk-feed{grid-template-columns:repeat(2,1fr);}
+  .nk-contact{grid-template-columns:1fr;}
+  .nk-footer-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:760px){
+  :root{--nk-head:auto;}
+  .nk-fixed-top{position:sticky;}
+  html{scroll-padding-top:16px;}
+  .nk-hero{padding-top:38px;}
+  .nk-nav{
+    display:none;width:100%;flex-direction:column;gap:2px;margin:12px 0 0;
+    border-top:1px solid var(--nk-line);padding-top:10px;
+  }
+  .nk-nav.nk-open{display:flex;}
+  .nk-header-inner{padding:12px 0;}
+  .nk-header-tools{margin-left:0;width:100%;order:5;}
+  .nk-search{width:100%;}
+  .nk-burger{display:flex;margin-left:auto;}
+  .nk-feed,.nk-creators,.nk-topics,.nk-stories,.nk-reviews,.nk-rank-grid,.nk-news{grid-template-columns:1fr;}
+  .nk-footer-grid{grid-template-columns:1fr;}
+  .nk-hero-stats{gap:22px;}
+  .nk-hero-float{position:static;margin-top:14px;max-width:none;}
+  .nk-mini-card{grid-template-columns:96px 1fr;}
+  .nk-section{padding:46px 0;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="nk-fixed-top">
+  <!-- 公告条 -->
+  <div class="nk-notice">
+    <div class="nk-wrap">
+      <span class="nk-notice-badge">更新</span>
+      <span class="nk-notice-text">
+        11 月 19 日新增「<b>BT 1024 7086 失效</b>」反馈专页：本期收录 <b>27</b> 条索引失效记录、<b>14</b> 条镜像替换说明，并开放创作者投稿通道，欢迎参与校验与投票。
+      </span>
+      <a class="nk-notice-link" href="#nk-news">查看更新日志 →</a>
+    </div>
+  </div>
+
+  <!-- 页头 -->
+  <header class="nk-header">
+    <div class="nk-wrap nk-header-inner">
+      <a class="nk-logo" href="#nk-top" aria-label="索引映像官方网站首页">
+        <span class="nk-logo-mark">
+          <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <path d="M20 44V20h10a8 8 0 010 16H20" stroke="#3fe0a8" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="46" cy="26" r="4" fill="#ffb648"/>
+          </svg>
+        </span>
+        <span class="nk-logo-text">
+          <strong>索引映像</strong>
+          <span>Index Motion</span>
+        </span>
+      </a>
+      <nav class="nk-nav" id="nk-nav" aria-label="主导航">
+        <a href="#nk-top" class="nk-active">首页</a>
+        <a href="#nk-focus">焦点内容</a>
+        <a href="#nk-feed">视频流</a>
+        <a href="#nk-topics">专题企划</a>
+        <a href="#nk-creators">创作者</a>
+        <a href="#nk-rank">榜单</a>
+        <a href="#nk-news">企业动态</a>
+        <a href="#nk-faq">帮助</a>
+        <a href="#nk-contact">联系</a>
+      </nav>
+      <div class="nk-header-tools">
+        <div class="nk-search">
+          <input type="text" id="nk-search-input" placeholder="搜索索引、失效反馈、创作者…" aria-label="站内搜索">
+          <button type="button" id="nk-search-btn">搜索</button>
+        </div>
+        <button class="nk-burger" id="nk-burger" type="button" aria-label="展开菜单" aria-expanded="false" aria-controls="nk-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="nk-search-feedback" id="nk-search-feedback" role="status" aria-live="polite"></div>
+    </div>
+  </header>
+</div>
+
+<main id="nk-top">
+
+  <!-- 首屏 -->
+  <section class="nk-hero">
+    <div class="nk-wrap nk-hero-grid">
+      <div>
+        <span class="nk-hero-tag"><i></i>官方网站 · 企业级内容生态 · 持续运营</span>
+        <h1>BT 1024 7086 失效<em>：索引治理与原创影像社区</em></h1>
+        <p class="nk-hero-lead">
+          索引映像是一家专注资源索引治理与原创影像分发的视频品牌企业。围绕「BT 1024 7086 失效」这类高频反馈，我们建立了失效登记、镜像校验、创作者复核的完整链路，让每一次索引变动都有据可查，让每一份精品内容都值得信赖。
+        </p>
+        <div class="nk-hero-actions">
+          <a class="nk-btn nk-btn-primary" href="#nk-feed">进入视频流</a>
+          <a class="nk-btn nk-btn-ghost" href="#nk-analyze">了解索引解析</a>
+          <button class="nk-btn nk-btn-ghost" type="button" data-nk-modal="submit">投稿入口</button>
+        </div>
+        <div class="nk-hero-stats">
+          <div class="nk-hero-stat"><b>18.6<span>万</span></b><small>累计登记失效条目</small></div>
+          <div class="nk-hero-stat"><b>4,120<span>位</span></b><small>持续参与的创作者</small></div>
+          <div class="nk-hero-stat"><b>99.2<span>%</span></b><small>索引复核完成率</small></div>
+        </div>
+      </div>
+      <div class="nk-hero-visual">
+        <figure class="nk-hero-shot" style="margin:0;">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 400'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2311263d'/%3E%3Cstop offset='1' stop-color='%230b1724'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%233fe0a8' stop-opacity='.85'/%3E%3Cstop offset='1' stop-color='%234ea8ff' stop-opacity='.2'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='400' fill='url(%23a)'/%3E%3Cg stroke='%233fe0a8' stroke-opacity='.16'%3E%3Cpath d='M0 320h640M0 240h640M0 160h640M0 80h640'/%3E%3Cpath d='M120 0v400M240 0v400M360 0v400M480 0v400'/%3E%3C/g%3E%3Cpath d='M80 300 L190 200 L285 246 L392 138 L500 190 L570 108' fill='none' stroke='url(%23b)' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='190' cy='200' r='8' fill='%233fe0a8'/%3E%3Ccircle cx='392' cy='138' r='8' fill='%23ffb648'/%3E%3Ccircle cx='570' cy='108' r='8' fill='%234ea8ff'/%3E%3Crect x='72' y='52' width='152' height='34' rx='8' fill='%230e1e2e' stroke='%233fe0a8' stroke-opacity='.4'/%3E%3Ctext x='90' y='75' fill='%233fe0a8' font-size='15' font-family='sans-serif'%3EINDEX 07/24%3C/text%3E%3C/svg%3E" alt="BT 1024 7086 失效索引趋势折线主视觉图">
+        </figure>
+        <div class="nk-hero-float">
+          <span class="nk-play-dot">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          </span>
+          <span>
+            <strong>失效复核实录 · 第 42 期</strong>
+            <small>12 分 36 秒 · 官方发布</small>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 深度解析 -->
+  <section class="nk-section nk-section-alt" id="nk-analyze">
+    <div class="nk-wrap">
+      <div class="nk-sec-head">
+        <span class="nk-sec-kicker">Deep Analysis</span>
+        <h2>关于「BT 1024 7086 失效」的定位与解析</h2>
+        <p>这是一份面向普通用户与创作者的双向说明：它既解释了为什么索引会失效，也说明了我们这个平台如何把失效信息变成可维护的公共资产。</p>
+      </div>
+      <div class="nk-analyze">
+        <div class="nk-prose">
+          <p>
+            「BT 1024 7086 失效」在社区里往往是一句很短的话：有人打开收藏页，发现某个索引编号指向的资源已经无法访问，于是留下这样一条记录。它看起来只是技术性的报错，实际上却承载着资源分发生命周期的完整信息——谁在什么时间发布、经由哪一个节点传播、在什么时候第一次被报告异常、由谁完成了复核、最终是替换、归档还是标记为长期不可用。索引映像作为官方网站，把这些散落在各处的一句句话，整理成可以检索、可以追溯、可以复盘的条目，这是我们对「失效」这件事最基本的态度：不回避，不模糊，用制度和记录去回应。
+          </p>
+          <h3>失效不是终点，而是内容生态的一次校验</h3>
+          <p>
+            在任何一个持续运营的资源社区里，索引的失效都是高频且正常的现象。存储节点会迁移，授权范围会调整，发布者会主动下架，链接会因时间流逝而自然腐坏。真正决定一个平台品质的，不是它能否让所有链接永远有效，而是它是否拥有<strong>清晰、可验证、可申诉</strong>的处理流程。索引映像将「BT 1024 7086 失效」这类反馈纳入统一工单体系：用户提交编号与现象描述，系统自动匹配历史记录，创作者与运营团队在 48 小时内完成首次核验，并在页面上公示处理结论。若属于可修复的镜像问题，我们会给出迁移说明；若属于长期不可用，则标记归档，避免更多人重复踩坑。这套机制并不炫目，但它让每一次失效都有了归处。
+          </p>
+          <h3>从编号到叙事：索引背后的创作者视角</h3>
+          <p>
+            很多用户只看到编号，创作者看到的却是一段完整的创作经历。一个编号可能对应某位创作者三年前拍摄的城市夜景纪录片，也可能对应一位独立导演自筹资金完成的短片合集。当索引失效，创作者的损失往往比观众更大：作品失去了入口，评论区逐渐沉默，后续的系列企划也难以推进。正因如此，索引映像在企业层面坚持「原创优先」：我们鼓励创作者把作品同时沉淀在官方频道内，以高清版本长期保留，并为优质内容提供专题推荐、榜单曝光与品牌合作机会。失效条目的复核过程，也是一次重新发现创作者的机会——我们会邀请原作者补充作品信息，把旧编号与新入口关联起来，让内容生态保持连续。
+          </p>
+          <h3>用户至上：让每一次反馈都被看见</h3>
+          <p>
+            我们深知，用户愿意花时间填写一条「BT 1024 7086 失效」的反馈，本身就是对平台的信任。因此，索引映像在交互层面做了大量细节设计：反馈表单支持匿名提交，处理进度可在榜单与动态中查询，同一条目支持多人投票以提升优先级，处理完成后会通过站内提示告知结果。对于高频失效的索引段，我们会建立专项页面，集中呈现历史记录、替换建议与社区讨论。这种透明化的处理方式，使平台在垂直领域中逐步形成了口碑——不是因为我们承诺永不失效，而是因为我们承诺<strong>认真对待每一次失效</strong>。
+          </p>
+          <h3>关于这个品牌的长期主义</h3>
+          <p>
+            索引映像成立于六年前，最初只是一个由几位影像爱好者维护的小型索引整理项目。随着内容生态扩大，我们逐步引入企业级的内容审核、版权登记、创作者激励与数据看板，形成了今天这条从索引治理到原创分发的完整链路。截至 2026 年 11 月，平台累计服务用户超过 320 万，签约与入驻创作者 4,120 位，年均处理索引反馈工单超过 6 万条。我们把自己定位为「值得信赖的索引影像社区」：既提供专业的内容管理能力，也保留社区的温度与包容。无论是第一次遇到失效的新用户，还是深耕多年的资深创作者，都能在这里找到清晰、稳定、可持续的路径。
+          </p>
+          <h3>面向未来：让索引治理成为公共知识</h3>
+          <p>
+            下一步，索引映像计划把失效记录整理为开放的数据集，供研究者与开发者分析资源生命周期；同时上线创作者成长体系，把「索引维护贡献」纳入影响力评估，让默默复核链接的人也获得应有的认可。我们相信，一个品牌的力量不只来自它发布了多少精品内容，更来自它是否愿意承担那些繁琐、琐碎却必要的工作。BT 1024 7086 失效，正是这样一个入口：从一个看似微小的报错出发，我们看见的是整个内容生态的责任与温度。
+          </p>
+        </div>
+        <aside>
+          <div class="nk-side-card">
+            <h4>近期处理节点</h4>
+            <ul class="nk-timeline">
+              <li>
+                <time>2026-11-19</time>
+                <p>新增 27 条失效登记，其中 14 条完成镜像替换说明。</p>
+              </li>
+              <li>
+                <time>2026-11-16</time>
+                <p>创作者复核通道开放，支持关联旧编号与新入口。</p>
+              </li>
+              <li>
+                <time>2026-11-11</time>
+                <p>发布索引生命周期白皮书，公开复核流程图。</p>
+              </li>
+              <li>
+                <time>2026-11-04</time>
+                <p>榜单新增「维护贡献榜」，表彰高频校验用户。</p>
+              </li>
+            </ul>
+          </div>
+          <div class="nk-side-card">
+            <h4>相关议题标签</h4>
+            <div class="nk-keywords">
+              <span class="nk-keyword nk-hot">BT 1024 7086 失效</span>
+              <span class="nk-keyword">索引治理</span>
+              <span class="nk-keyword">失效反馈</span>
+              <span class="nk-keyword">镜像校验</span>
+              <span class="nk-keyword">原创优先</span>
+              <span class="nk-keyword nk-hot">创作者复核</span>
+              <span class="nk-keyword">内容生态</span>
+              <span class="nk-keyword">品牌故事</span>
+            </div>
+          </div>
+          <div class="nk-side-card">
+            <h4>快速参与</h4>
+            <p style="font-size:13px;color:var(--nk-sub);margin-bottom:14px;">上传失效截图或复核说明，即可进入社区工单池，获得官方回复与贡献记录。</p>
+            <button class="nk-btn nk-btn-amber" type="button" data-nk-modal="submit" style="width:100%;">立即投稿</button>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点内容 -->
+  <section class="nk-section" id="nk-focus">
+    <div class="nk-wrap">
+      <div class="nk-sec-head nk-sec-head-row">
+        <div>
+          <span class="nk-sec-kicker">Focus</span>
+          <h2>焦点内容：本期重点推荐</h2>
+          <p>围绕索引治理与原创影像，编辑部每期精选一组值得完整看完的内容。</p>
+        </div>
+        <button class="nk-btn nk-btn-ghost" type="button" data-nk-share="焦点内容专题">分享本页</button>
+      </div>
+      <div class="nk-feature-grid">
+        <article class="nk-feature-main">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230e2a3a'/%3E%3Cstop offset='1' stop-color='%2313253d'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23f1)'/%3E%3Cg fill='none' stroke='%233fe0a8' stroke-opacity='.5' stroke-width='2'%3E%3Crect x='70' y='70' width='180' height='112' rx='8'/%3E%3Crect x='300' y='70' width='270' height='112' rx='8'/%3E%3Crect x='70' y='212' width='500' height='78' rx='8'/%3E%3C/g%3E%3Cg fill='%233fe0a8'%3E%3Ccircle cx='110' cy='126' r='9'/%3E%3Crect x='134' y='116' width='88' height='8' rx='4' opacity='.7'/%3E%3Crect x='134' y='134' width='56' height='8' rx='4' opacity='.4'/%3E%3C/g%3E%3Cg fill='%23ffb648'%3E%3Cpath d='M335 108l14 24h-28z'/%3E%3Crect x='360' y='118' width='150' height='8' rx='4' opacity='.75'/%3E%3Crect x='360' y='134' width='96' height='8' rx='4' opacity='.45'/%3E%3C/g%3E%3Cg fill='%234ea8ff' opacity='.8'%3E%3Crect x='96' y='240' width='120' height='10' rx='5'/%3E%3Crect x='232' y='240' width='180' height='10' rx='5' opacity='.55'/%3E%3Crect x='428' y='240' width='110' height='10' rx='5' opacity='.35'/%3E%3C/g%3E%3C/svg%3E" alt="BT 1024 7086 失效复核实录专题封面">
+          <div class="nk-feature-caption">
+            <span class="nk-video-badge">官方发布 · 深度纪录</span>
+            <h3>失效复核实录：一个编号如何被重新点亮</h3>
+            <p>跟踪 72 小时，记录运营、创作者与用户三方协作还原索引入口的全过程。</p>
+            <div class="nk-feature-meta">
+              <span>时长 12:36</span>
+              <span>2026-11-19</span>
+              <span>4.2 万次播放</span>
+            </div>
+          </div>
+        </article>
+        <div class="nk-feature-side">
+          <article class="nk-mini-card">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23132033'/%3E%3Cg stroke='%23ffb648' stroke-opacity='.6' fill='none' stroke-width='2.5'%3E%3Cpath d='M40 150 L100 96 L150 124 L215 62 L280 92'/%3E%3C/g%3E%3Ccircle cx='215' cy='62' r='7' fill='%23ffb648'/%3E%3Crect x='36' y='32' width='104' height='20' rx='5' fill='%23ffb648' opacity='.18'/%3E%3C/svg%3E" alt="索引生命周期数据观测短片封面">
+            <div>
+              <span class="nk-video-badge" style="margin-bottom:6px;">教程干货</span>
+              <h4>用数据看索引生命周期：从发布到归档</h4>
+              <span>8:12 · 影像实验室</span>
+            </div>
+          </article>
+          <article class="nk-mini-card">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23141d30'/%3E%3Cg fill='%234ea8ff' opacity='.75'%3E%3Ccircle cx='80' cy='100' r='26'/%3E%3Ccircle cx='160' cy='100' r='26' opacity='.5'/%3E%3Ccircle cx='240' cy='100' r='26' opacity='.28'/%3E%3C/g%3E%3Cpath d='M80 100h160' stroke='%23ffffff' stroke-opacity='.3' stroke-width='2' stroke-dasharray='6 6'/%3E%3C/svg%3E" alt="创作者访谈：维护者的日常短片封面">
+            <div>
+              <span class="nk-video-badge" style="margin-bottom:6px;">人物访谈</span>
+              <h4>维护者的日常：四位志愿者的一年</h4>
+              <span>15:04 · 城南映像</span>
+            </div>
+          </article>
+          <article class="nk-mini-card">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%2315212f'/%3E%3Cg stroke='%233fe0a8' fill='none' stroke-width='2'%3E%3Cpath d='M30 160c40-60 80 20 120-30s70 10 140-60'/%3E%3C/g%3E%3Cg fill='%233fe0a8' opacity='.5'%3E%3Crect x='30' y='40' width='90' height='8' rx='4'/%3E%3Crect x='30' y='58' width='56' height='8' rx='4'/%3E%3C/g%3E%3C/svg%3E" alt="镜像替换操作演示短片封面">
+            <div>
+              <span class="nk-video-badge" style="margin-bottom:6px;">实用技巧</span>
+              <h4>镜像替换五步法：给旧编号一个新入口</h4>
+              <span>6:48 · 阿柘</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 视频流 -->
+  <section class="nk-section nk-section-alt" id="nk-feed">
+    <div class="nk-wrap">
+      <div class="nk-sec-head nk-sec-head-row">
+        <div>
+          <span class="nk-sec-kicker">Video Feed</span>
+          <h2>热门视频流：持续更新的精品内容</h2>
+          <p>点击卡片上的点赞、收藏按钮即可参与互动，数据会在本地即时反馈。</p>
+        </div>
+        <div class="nk-feed-filter" id="nk-feed-filter">
+          <button class="nk-chip nk-on" type="button" data-nk-filter="all">全部</button>
+          <button class="nk-chip" type="button" data-nk-filter="失效">失效治理</button>
+          <button class="nk-chip" type="button" data-nk-filter="创作">创作幕后</button>
+          <button class="nk-chip" type="button" data-nk-filter="城市">城市探索</button>
+        </div>
+      </div>
+      <div class="nk-feed" id="nk-feed-list">
+
+        <article class="nk-vcard" data-nk-cat="失效">
+          <div class="nk-vcard-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23122236'/%3E%3Cg stroke='%233fe0a8' stroke-width='2' fill='none' opacity='.65'%3E%3Crect x='50' y='60' width='110' height='70' rx='7'/%3E%3Crect x='190' y='60' width='160' height='70' rx='7'/%3E%3C/g%3E%3Cg fill='%233fe0a8'%3E%3Crect x='70' y='150' width='90' height='8' rx='4' opacity='.8'/%3E%3Crect x='70' y='168' width='150' height='8' rx='4' opacity='.4'/%3E%3C/g%3E%3Ccircle cx='320' cy='150' r='18' fill='%23ffb648' opacity='.75'/%3E%3C/svg%3E" alt="失效自助排查指南封面图">
+            <span class="nk-cover-play"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="#08211a"><path d="M8 5v14l11-7z"/></svg></i></span>
+            <span class="nk-cover-dur">09:24</span>
+          </div>
+          <div class="nk-vcard-body">
+            <h3>遇到失效别慌：三步完成自助排查</h3>
+            <p class="nk-sum">从登记编号、检查网络环境到提交复核，完整演示一次标准反馈流程。</p>
+            <div class="nk-tags"><span class="nk-tag">失效治理</span><span class="nk-tag">实用技巧</span></div>
+            <div class="nk-vcard-foot">
+              <span class="nk-ava" style="background:#3fe0a8;">索</span>
+              <span class="nk-vcard-author">索引映像官方</span>
+              <button class="nk-act" type="button" data-nk-like><svg viewBox="0 0 24 24" fill="currentColor"><path d="M2 20h4V9H2v11zm20-10a2 2 0 00-2-2h-6l1-4a1 1 0 00-1-1h-1l-4 6v11h10a2 2 0 002-2v-8z"/></svg><span>1286</span></button>
+              <button class="nk-act" type="button" data-nk-save><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 2h12a2 2 0 012 2v18l-8-5-8 5V4a2 2 0 012-2z"/></svg></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="nk-vcard" data-nk-cat="创作">
+          <div class="nk-vcard-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%231a1a2c'/%3E%3Cg stroke='%23ffb648' stroke-width='2' fill='none' opacity='.7'%3E%3Cpath d='M60 170c50-90 120 20 180-60s80 10 100-30'/%3E%3C/g%3E%3Cg fill='%23ffb648' opacity='.85'%3E%3Ccircle cx='60' cy='170' r='7'/%3E%3Ccircle cx='240' cy='110' r='7'/%3E%3C/g%3E%3Crect x='56' y='40' width='130' height='20' rx='6' fill='%23ffb648' opacity='.2'/%3E%3C/svg%3E" alt="短片剪辑流程拆解封面图">
+            <span class="nk-cover-play"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="#08211a"><path d="M8 5v14l11-7z"/></svg></i></span>
+            <span class="nk-cover-dur">14:02</span>
+          </div>
+          <div class="nk-vcard-body">
+            <h3>从素材到成片：一支短片剪辑流程拆解</h3>
+            <p class="nk-sum">分享脚本表、分镜与调色的真实工作流，附完整工程结构建议。</p>
+            <div class="nk-tags"><span class="nk-tag">创作幕后</span><span class="nk-tag">教程干货</span></div>
+            <div class="nk-vcard-foot">
+              <span class="nk-ava" style="background:#ffb648;">栖</span>
+              <span class="nk-vcard-author">栖木工作间</span>
+              <button class="nk-act" type="button" data-nk-like><svg viewBox="0 0 24 24" fill="currentColor"><path d="M2 20h4V9H2v11zm20-10a2 2 0 00-2-2h-6l1-4a1 1 0 00-1-1h-1l-4 6v11h10a2 2 0 002-2v-8z"/></svg><span>942</span></button>
+              <button class="nk-act" type="button" data-nk-save><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 2h12a2 2 0 012 2v18l-8-5-8 5V4a2 2 0 012-2z"/></svg></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="nk-vcard" data-nk-cat="城市">
+          <div class="nk-vcard-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%230f2033'/%3E%3Cg fill='%234ea8ff' opacity='.3'%3E%3Crect x='40' y='120' width='42' height='80'/%3E%3Crect x='96' y='86' width='52' height='114'/%3E%3Crect x='162' y='104' width='38' height='96'/%3E%3Crect x='214' y='66' width='56' height='134'/%3E%3Crect x='284' y='96' width='44' height='104'/%3E%3Crect x='342' y='130' width='34' height='70'/%3E%3C/g%3E%3Ccircle cx='320' cy='54' r='20' fill='%23ffb648' opacity='.8'/%3E%3C/svg%3E" alt="夜间城市影像拍摄随访封面图">
+            <span class="nk-cover-play"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="#08211a"><path d="M8 5v14l11-7z"/></svg></i></span>
+            <span class="nk-cover-dur">11:47</span>
+          </div>
+          <div class="nk-vcard-body">
+            <h3>夜色里的索引：一次城市影像随访</h3>
+            <p class="nk-sum">跟拍三位夜间创作者，记录他们把城市转译为影像索引的过程。</p>
+            <div class="nk-tags"><span class="nk-tag">城市探索</span><span class="nk-tag">日常记录</span></div>
+            <div class="nk-vcard-foot">
+              <span class="nk-ava" style="background:#4ea8ff;">林</span>
+              <span class="nk-vcard-author">林深影像</span>
+              <button class="nk-act" type="button" data-nk-like><svg viewBox="0 0 24 24" fill="currentColor"><path d="M2 20h4V9H2v11zm20-10a2 2 0 00-2-2h-6l1-4a1 1 0 00-1-1h-1l-4 6v11h10a2 2 0 002-2v-8z"/></svg><span>1735</span></button>
+              <button class="nk-act" type="button" data-nk-save><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 2h12a2 2 0 012 2v18l-8-5-8 5V4a2 2 0 012-2z"/></svg></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="nk-vcard" data-nk-cat="失效">
+          <div class="nk-vcard-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23161f31'/%3E%3Cg stroke='%23c96' fill='none' stroke-width='2.5'%3E%3Cpath d='M70 150l70-70m0 70l-70-70' stroke='%23ff8f6b'/%3E%3C/g%3E%3Cg fill='%233fe0a8'%3E%3Crect x='190' y='80' width='150' height='9' rx='4' opacity='.8'/%3E%3Crect x='190' y='102' width='110' height='9' rx='4' opacity='.5'/%3E%3Crect x='190' y='124' width='130' height='9' rx='4' opacity='.35'/%3E%3C/g%3E%3C/svg%3E" alt="失效条目归档标准说明封面图">
+            <span class="nk-cover-play"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="#08211a"><path d="M8 5v14l11-7z"/></svg></i></span>
+            <span class="nk-cover-dur">07:55</span>
+          </div>
+          <div class="nk-vcard-body">
+            <h3>什么时候该归档？失效条目判定标准</h3>
+            <p class="nk-sum">解释可修复、待观察与长期不可用三类状态的判定依据与申诉方式。</p>
+            <div class="nk-tags"><span class="nk-tag">失效治理</span><span class="nk-tag">行业观察</span></div>
+            <div class="nk-vcard-foot">
+              <span class="nk-ava" style="background:#ff8f6b;">审</span>
+              <span class="nk-vcard-author">内容审核组</span>
+              <button class="nk-act" type="button" data-nk-like><svg viewBox="0 0 24 24" fill="currentColor"><path d="M2 20h4V9H2v11zm20-10a2 2 0 00-2-2h-6l1-4a1 1 0 00-1-1h-1l-4 6v11h10a2 2 0 002-2v-8z"/></svg><span>611</span></button>
+              <button class="nk-act" type="button" data-nk-save><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 2h12a2 2 0 012 2v18l-8-5-8 5V4a2 2 0 012-2z"/></svg></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="nk-vcard" data-nk-cat="创作">
+          <div class="nk-vcard-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%2312292a'/%3E%3Cg stroke='%233fe0a8' fill='none' stroke-width='2' opacity='.7'%3E%3Ccircle cx='130' cy='112' r='48'/%3E%3Ccircle cx='130' cy='112' r='26'/%3E%3C/g%3E%3Cg fill='%233fe0a8'%3E%3Crect x='210' y='86' width='130' height='9' rx='4' opacity='.75'/%3E%3Crect x='210' y='108' width='96' height='9' rx='4' opacity='.45'/%3E%3Crect x='210' y='130' width='112' height='9' rx='4' opacity='.3'/%3E%3C/g%3E%3C/svg%3E" alt="独立导演创作手记封面图">
+            <span class="nk-cover-play"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="#08211a"><path d="M8 5v14l11-7z"/></svg></i></span>
+            <span class="nk-cover-dur">18:30</span>
+          </div>
+          <div class="nk-vcard-body">
+            <h3>独立导演手记：三年拍一部片是什么体验</h3>
+            <p class="nk-sum">从筹资、取景到后期，讲述一部小成本纪录片的完整诞生过程。</p>
+            <div class="nk-tags"><span class="nk-tag">创作幕后</span><span class="nk-tag">人物访谈</span></div>
+            <div class="nk-vcard-foot">
+              <span class="nk-ava" style="background:#9be8d0;">周</span>
+              <span class="nk-vcard-author">周叙白</span>
+              <button class="nk-act" type="button" data-nk-like><svg viewBox="0 0 24 24" fill="currentColor"><path d="M2 20h4V9H2v11zm20-10a2 2 0 00-2-2h-6l1-4a1 1 0 00-1-1h-1l-4 6v11h10a2 2 0 002-2v-8z"/></svg><span>2087</span></button>
+              <button class="nk-act" type="button" data-nk-save><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 2h12a2 2 0 012 2v18l-8-5-8 5V4a2 2 0 012-2z"/></svg></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="nk-vcard" data-nk-cat="城市">
+          <div class="nk-vcard-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%231b2137'/%3E%3Cg stroke='%23ffb648' fill='none' stroke-width='2.5' opacity='.8'%3E%3Cpath d='M40 180h320'/%3E%3Cpath d='M90 180V96h60v84M180 180V70h70v110M280 180v-56h60v56'/%3E%3C/g%3E%3Ccircle cx='215' cy='100' r='14' fill='%23ffb648' opacity='.8'/%3E%3C/svg%3E" alt="旧城街区影像档案封面图">
+            <span class="nk-cover-play"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="#08211a"><path d="M8 5v14l11-7z"/></svg></i></span>
+            <span class="nk-cover-dur">13:11</span>
+          </div>
+          <div class="nk-vcard-body">
+            <h3>旧城街区影像档案：把记忆存进编号</h3>
+            <p class="nk-sum">用一年时间走访老街区，为即将消失的场景建立可检索的影像档案。</p>
+            <div class="nk-tags"><span class="nk-tag">城市探索</span><span class="nk-tag">在地文化</span></div>
+            <div class="nk-vcard-foot">
+              <span class="nk-ava" style="background:#ffd08a;">南</span>
+              <span class="nk-vcard-author">南岸记录</span>
+              <button class="nk-act" type="button" data-nk-like><svg viewBox="0 0 24 24" fill="currentColor"><path d="M2 20h4V9H2v11zm20-10a2 2 0 00-2-2h-6l1-4a1 1 0 00-1-1h-1l-4 6v11h10a2 2 0 002-2v-8z"/></svg><span>1502</span></button>
+              <button class="nk-act" type="button" data-nk-save><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 2h12a2 2 0 012 2v18l-8-5-8 5V4a2 2 0 012-2z"/></svg></button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="nk-section" id="nk-topics">
+    <div class="nk-wrap">
+      <div class="nk-sec-head">
+        <span class="nk-sec-kicker">Editorial</span>
+        <h2>专题企划：围绕索引的三条主线</h2>
+        <p>从失效治理到原创扶持，专题企划把零散内容组织成可追踪的长期项目。</p>
+      </div>
+      <div class="nk-topics">
+        <article class="nk-topic">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%2312223a'/%3E%3Cg stroke='%233fe0a8' stroke-width='2' fill='none' opacity='.7'%3E%3Cpath d='M60 160l60-50 50 30 60-70 70 40'/%3E%3C/g%3E%3Ccircle cx='180' cy='140' r='7' fill='%233fe0a8'/%3E%3Ccircle cx='300' cy='80' r='7' fill='%23ffb648'/%3E%3C/svg%3E" alt="失效治理年度专题封面">
+          <div class="nk-topic-body">
+            <span class="nk-topic-status">更新中 · 第 4 期</span>
+            <h3>失效治理年度计划</h3>
+            <p>系统梳理年度高频失效条目，公开处理路径与复核结论，形成可复用的治理手册。</p>
+          </div>
+        </article>
+        <article class="nk-topic">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%231c2436'/%3E%3Cg fill='%23ffb648' opacity='.7'%3E%3Crect x='60' y='120' width='50' height='60' rx='6'/%3E%3Crect x='130' y='90' width='50' height='90' rx='6'/%3E%3Crect x='200' y='60' width='50' height='120' rx='6'/%3E%3Crect x='270' y='100' width='50' height='80' rx='6'/%3E%3C/g%3E%3C/svg%3E" alt="原创扶持计划专题封面">
+          <div class="nk-topic-body">
+            <span class="nk-topic-status">已上线</span>
+            <h3>原创扶持计划</h3>
+            <p>为独立创作者提供高清存储、正版登记与专题曝光，让精品内容拥有稳定入口。</p>
+          </div>
+        </article>
+        <article class="nk-topic">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23101f2c'/%3E%3Cg stroke='%234ea8ff' stroke-width='2' fill='none' opacity='.7'%3E%3Ccircle cx='200' cy='112' r='62'/%3E%3Ccircle cx='200' cy='112' r='34'/%3E%3Cpath d='M200 50v124M138 112h124'/%3E%3C/g%3E%3C/svg%3E" alt="维护者贡献榜专题封面">
+          <div class="nk-topic-body">
+            <span class="nk-topic-status nk-soon">即将开启</span>
+            <h3>维护者贡献榜</h3>
+            <p>把复核、校验与反馈纳入影响力评估，让默默维护索引的人被更多人看见。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者 -->
+  <section class="nk-section nk-section-alt" id="nk-creators">
+    <div class="nk-wrap">
+      <div class="nk-sec-head">
+        <span class="nk-sec-kicker">Creators</span>
+        <h2>创作者矩阵：谁在维护这批索引</h2>
+        <p>他们既是内容的创造者，也是社区秩序的维护者。点击「查看档案」可了解创作者详情。</p>
+      </div>
+      <div class="nk-creators">
+
+        <article class="nk-creator">
+          <span class="nk-ava-lg" style="background:#3fe0a8;">索</span>
+          <h3>索引映像官方</h3>
+          <div class="nk-field">失效治理 · 官方发布</div>
+          <p>负责官方公告、复核实录与治理手册的发布，持续输出可验证的处理结论。</p>
+          <div class="nk-creator-stats">
+            <div><b>286</b>作品</div>
+            <div><b>18.4万</b>关注</div>
+          </div>
+          <button class="nk-more" type="button" data-nk-author="索引映像官方|失效治理 · 官方发布|发布官方复核实录与治理手册共 286 条，长期跟踪索引生命周期，是社区里最稳定的维护力量。">查看档案 →</button>
+        </article>
+
+        <article class="nk-creator">
+          <span class="nk-ava-lg" style="background:#ffb648;">栖</span>
+          <h3>栖木工作间</h3>
+          <div class="nk-field">创作幕后 · 教程干货</div>
+          <p>专注影像工作流分享，把复杂的剪辑与调色流程拆成可复用的日常步骤。</p>
+          <div class="nk-creator-stats">
+            <div><b>94</b>作品</div>
+            <div><b>6.7万</b>关注</div>
+          </div>
+          <button class="nk-more" type="button" data-nk-author="栖木工作间|创作幕后 · 教程干货|以工作流拆解见长，擅长把长流程压缩成清晰的短教程，累计作品 94 条。">查看档案 →</button>
+        </article>
+
+        <article class="nk-creator">
+          <span class="nk-ava-lg" style="background:#4ea8ff;">林</span>
+          <h3>林深影像</h3>
+          <div class="nk-field">城市探索 · 在地文化</div>
+          <p>用镜头记录城市夜晚与街巷变迁，作品气质安静克制，叙事细节丰富。</p>
+          <div class="nk-creator-stats">
+            <div><b>61</b>作品</div>
+            <div><b>4.9万</b>关注</div>
+          </div>
+          <button class="nk-more" type="button" data-nk-author="林深影像|城市探索 · 在地文化|长期拍摄城市夜间影像与旧街档案，作品以克制的镜头语言记录地方文化。">查看档案 →</button>
+        </article>
+
+        <article class="nk-creator">
+          <span class="nk-ava-lg" style="background:#9be8d0;">周</span>
+          <h3>周叙白</h3>
+          <div class="nk-field">人物访谈 · 独立纪录</div>
+          <p>独立导演，关注普通人的长期项目，擅长用访谈还原创作的艰难与温度。</p>
+          <div class="nk-creator-stats">
+            <div><b>37</b>作品</div>
+            <div><b>3.2万</b>关注</div>
+          </div>
+          <button class="nk-more" type="button" data-nk-author="周叙白|人物访谈 · 独立纪录|独立导演，三年完成一部小成本纪录片，擅长以访谈方式还原创作过程。">查看档案 →</button>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 故事随笔 -->
+  <section class="nk-section" id="nk-stories">
+    <div class="nk-wrap">
+      <div class="nk-sec-head">
+        <span class="nk-sec-kicker">Notes</span>
+        <h2>故事与随笔：那些没被剪进片子里的部分</h2>
+        <p>影像之外，还有一些更慢的文字，记录着索引与人的真实关系。</p>
+      </div>
+      <div class="nk-stories">
+        <article class="nk-story">
+          <h3>凌晨两点，我收到一条失效反馈</h3>
+          <p>那是一位用户发来的短消息，只有编号和一句「打不开了」。我按照流程核验、联系原作者、重建入口，第二天收到一条回复：谢谢你们还在。很多时候，坚持就藏在这些微小的往返里。</p>
+          <div class="nk-story-by">—— 运营组 · 阿柘</div>
+        </article>
+        <article class="nk-story">
+          <h3>我把三年拍的素材做了索引</h3>
+          <p>硬盘里堆着七十二个文件夹，名字全是日期。把它们整理成编号、标注场景、填写说明，像是在给自己过去的时间写目录。整理完之后，我第一次觉得这些素材真的属于我了。</p>
+          <div class="nk-story-by">—— 创作者 · 周叙白</div>
+        </article>
+        <article class="nk-story">
+          <h3>旧链接背后，是一座会消失的街</h3>
+          <p>拍摄时那条街还在，剪辑完成时已经围挡。失效的不只是索引，还有一些场景本身。我们在页面里留下影像与坐标，希望很久以后，还有人能顺着编号找到它。</p>
+          <div class="nk-story-by">—— 创作者 · 南岸记录</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 榜单 -->
+  <section class="nk-section nk-section-alt" id="nk-rank">
+    <div class="nk-wrap">
+      <div class="nk-sec-head">
+        <span class="nk-sec-kicker">Ranking</span>
+        <h2>数据榜单：热度、口碑与维护贡献</h2>
+        <p>榜单每周更新一次，统计口径公开在帮助中心，欢迎监督与指正。</p>
+      </div>
+      <div class="nk-rank-grid">
+        <div class="nk-rank">
+          <h3><span>热</span>本周热度榜</h3>
+          <ol>
+            <li><span>失效复核实录：一个编号如何被重新点亮</span><small>4.2万</small></li>
+            <li><span>独立导演手记：三年拍一部片</span><small>3.6万</small></li>
+            <li><span>夜色里的索引：城市影像随访</span><small>3.1万</small></li>
+            <li><span>从素材到成片：剪辑流程拆解</span><small>2.8万</small></li>
+            <li><span>旧城街区影像档案</span><small>2.4万</small></li>
+          </ol>
+        </div>
+        <div class="nk-rank">
+          <h3><span>口</span>口碑推荐榜</h3>
+          <ol>
+            <li><span>失效自助排查指南</span><small>9.6 分</small></li>
+            <li><span>旧城街区影像档案</span><small>9.4 分</small></li>
+            <li><span>独立导演手记</span><small>9.3 分</small></li>
+            <li><span>镜像替换五步法</span><small>9.1 分</small></li>
+            <li><span>维护者的日常</span><small>9.0 分</small></li>
+          </ol>
+        </div>
+        <div class="nk-rank">
+          <h3><span>护</span>维护贡献榜</h3>
+          <ol>
+            <li><span>阿柘</span><small>复核 412 次</small></li>
+            <li><span>南岸记录</span><small>复核 356 次</small></li>
+            <li><span>栖木工作间</span><small>复核 298 次</small></li>
+            <li><span>林深影像</span><small>复核 241 次</small></li>
+            <li><span>匿名维护者</span><small>复核 203 次</small></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评价 -->
+  <section class="nk-section" id="nk-reviews">
+    <div class="nk-wrap">
+      <div class="nk-sec-head">
+        <span class="nk-sec-kicker">Voices</span>
+        <h2>用户评价：来自社区的真实声音</h2>
+        <p>我们保留了不同语气与不同维度的反馈，包括不太客气的那些。</p>
+      </div>
+      <div class="nk-reviews">
+
+        <article class="nk-review">
+          <div class="nk-stars">★★★★★</div>
+          <p>第一次遇到编号失效的时候我很烦躁，但按页面上的流程提交后，居然第二天就收到了处理说明。流程清楚，态度也真诚。</p>
+          <div class="nk-review-by">
+            <span class="nk-ava" style="background:#3fe0a8;">陈</span>
+            <span><strong>陈默</strong><small>普通用户 · 使用 2 年</small></span>
+          </div>
+        </article>
+
+        <article class="nk-review">
+          <div class="nk-stars">★★★★☆</div>
+          <p>内容质量整体不错，原创比例高。唯一的小建议是希望能更早看到失效提醒，不要等点开才发现入口变了。</p>
+          <div class="nk-review-by">
+            <span class="nk-ava" style="background:#ffb648;">苏</span>
+            <span><strong>苏合</strong><small>资深观众 · 使用 4 年</small></span>
+          </div>
+        </article>
+
+        <article class="nk-review">
+          <div class="nk-stars">★★★★★</div>
+          <p>作为创作者，我最看重的是作品能不能长期留在官方频道。这里的存储和登记流程让我很安心，专题推荐也带来了真实的新观众。</p>
+          <div class="nk-review-by">
+            <span class="nk-ava" style="background:#4ea8ff;">林</span>
+            <span><strong>林深影像</strong><small>入驻创作者 · 3 年</small></span>
+          </div>
+        </article>
+
+        <article class="nk-review">
+          <div class="nk-stars">★★★★☆</div>
+          <p>维护贡献榜这个设计很好，以前复核链接没人知道，现在至少有个地方能记录。希望统计口径再透明一点。</p>
+          <div class="nk-review-by">
+            <span class="nk-ava" style="background:#9be8d0;">阿</span>
+            <span><strong>阿柘</strong><small>社区维护者</small></span>
+          </div>
+        </article>
+
+        <article class="nk-review">
+          <div class="nk-stars">★★★★★</div>
+          <p>页面信息密度挺高，但不乱。失效解析那部分写得很扎实，看完终于明白为什么编号会变。</p>
+          <div class="nk-review-by">
+            <span class="nk-ava" style="background:#ffd08a;">许</span>
+            <span><strong>许一鸣</strong><small>新用户 · 使用 3 个月</small></span>
+          </div>
+        </article>
+
+        <article class="nk-review">
+          <div class="nk-stars">★★★★☆</div>
+          <p>希望移动端的卡片再紧凑一点，现在滑动距离有点长。不过交互反馈很及时，点赞收藏都很顺手。</p>
+          <div class="nk-review-by">
+            <span class="nk-ava" style="background:#c3a0ff;">罗</span>
+            <span><strong>罗小满</strong><small>移动端用户</small></span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 企业动态 -->
+  <section class="nk-section nk-section-alt" id="nk-news">
+    <div class="nk-wrap">
+      <div class="nk-sec-head">
+        <span class="nk-sec-kicker">Updates</span>
+        <h2>企业动态与更新日志</h2>
+        <p>官方发布的版本迭代、治理进展与社区活动，都会在这里留下记录。</p>
+      </div>
+      <div class="nk-news">
+        <article class="nk-news-item">
+          <time>2026-11-19</time>
+          <h3>「BT 1024 7086 失效」反馈专页上线</h3>
+          <p>集中收录本期 27 条失效记录与 14 条镜像替换说明，支持按编号检索与投票。</p>
+        </article>
+        <article class="nk-news-item">
+          <time>2026-11-14</time>
+          <h3>创作者复核通道开放</h3>
+          <p>创作者可提交作品信息，关联旧编号与新入口，复核通过后进入官方推荐池。</p>
+        </article>
+        <article class="nk-news-item">
+          <time>2026-11-08</time>
+          <h3>索引生命周期白皮书发布</h3>
+          <p>公开从发布、传播、异常到归档的完整流程，并附可复用的复核检查表。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="nk-section" id="nk-faq">
+    <div class="nk-wrap">
+      <div class="nk-sec-head">
+        <span class="nk-sec-kicker">Help</span>
+        <h2>常见问题：关于失效与复核</h2>
+        <p>以下问题来自社区高频提问，点击标题即可展开查看说明。</p>
+      </div>
+      <div class="nk-faq">
+        <details open>
+          <summary>看到「BT 1024 7086 失效」的提示，我该做什么？</summary>
+          <p>先确认网络环境是否正常，再在反馈表单中填写编号与现象描述。系统会自动匹配历史记录，若已有处理结论会直接展示；若为新条目，将进入工单池等待核验。</p>
+        </details>
+        <details>
+          <summary>提交失效反馈后多久会有结果？</summary>
+          <p>正常情况 48 小时内完成首次核验，复杂条目最长不超过 5 个工作日。处理结论会同步到对应条目页与动态公告中，可通过编号查询进度。</p>
+        </details>
+        <details>
+          <summary>为什么有些编号会被永久归档？</summary>
+          <p>当索引对应的内容已主动下架、授权到期或长期无法恢复时，我们会将其标记为归档，避免更多用户重复尝试。归档不等同于删除，历史记录仍会保留以便追溯。</p>
+        </details>
+        <details>
+          <summary>我是创作者，可以关联旧编号到新入口吗？</summary>
+          <p>可以。通过投稿入口提交作品信息与旧编号，审核通过后我们会建立关联，并在专题或榜单中给予适当曝光。请确保作品为原创或已获得合法授权。</p>
+        </details>
+        <details>
+          <summary>反馈内容会公开我的个人信息吗？</summary>
+          <p>不会。反馈默认匿名展示，仅统计编号、现象与处理结论。若你希望署名感谢，可在提交时选择公开昵称。</p>
+        </details>
+        <details>
+          <summary>如何参与维护贡献榜？</summary>
+          <p>持续提交有效反馈、协助核验或提供可验证的替换说明，都会计入贡献统计。榜单每周更新，统计口径在帮助中心公示。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系 -->
+  <section class="nk-section nk-section-alt" id="nk-contact">
+    <div class="nk-wrap">
+      <div class="nk-contact">
+        <div>
+          <span class="nk-sec-kicker">Contact</span>
+          <h2 style="font-size:26px;margin-bottom:14px;">联系官方团队</h2>
+          <p style="color:var(--nk-sub);font-size:14px;">无论是失效反馈、版权事务还是品牌合作，都可以通过以下方式与我们取得联系。工作日 9:30–18:30 期间，我们通常在两小时内回复。</p>
+          <ul class="nk-contact-list">
+            <li>
+              <span class="nk-contact-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></span>
+              <span><b>邮箱</b>hello@indexmotion.example</span>
+            </li>
+            <li>
+              <span class="nk-contact-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg></span>
+              <span><b>反馈入口</b>站内「投稿 / 反馈」表单，支持匿名提交</span>
+            </li>
+            <li>
+              <span class="nk-contact-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l9 4.5v9L12 21l-9-4.5v-9L12 3z"/></svg></span>
+              <span><b>品牌合作</b>bd@indexmotion.example（注明合作方向）</span>
+            </li>
+          </ul>
+        </div>
+        <div class="nk-contact-box">
+          <h3>有内容想被更多人看见？</h3>
+          <p>上传你的原创作品或失效复核说明，通过审核后即可进入官方推荐池。我们鼓励真实、专业、有细节的表达。</p>
+          <button class="nk-btn nk-btn-primary" type="button" data-nk-modal="submit" style="margin-right:8px;">投稿入口</button>
+          <button class="nk-btn nk-btn-ghost" type="button" data-nk-modal="feedback">举报反馈</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- 页脚 -->
+<footer class="nk-footer">
+  <div class="nk-wrap">
+    <div class="nk-footer-grid">
+      <div>
+        <div class="nk-logo" style="margin-bottom:14px;">
+          <span class="nk-logo-mark">
+            <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+              <path d="M20 44V20h10a8 8 0 010 16H20" stroke="#3fe0a8" stroke-width="5" stroke-linecap="round"/>
+              <circle cx="46" cy="26" r="4" fill="#ffb648"/>
+            </svg>
+          </span>
+          <span class="nk-logo-text">
+            <strong>索引映像</strong>
+            <span>Index Motion</span>
+          </span>
+        </div>
+        <p>索引映像官方网站，专注索引治理与原创影像分发的视频品牌企业。持续运营、值得信赖的内容生态，陪伴创作者与用户共同成长。</p>
+        <p style="color:#5d7characters;color:#5d7590;">企业注册地：华东 · 内容产业园区<br>运营状态：持续运营中</p>
+      </div>
+      <div>
+        <h4>站内导航</h4>
+        <ul>
+          <li><a href="#nk-focus">焦点内容</a></li>
+          <li><a href="#nk-feed">热门视频流</a></li>
+          <li><a href="#nk-topics">专题企划</a></li>
+          <li><a href="#nk-creators">创作者矩阵</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>品牌与帮助</h4>
+        <ul>
+          <li><a href="#nk-analyze">品牌故事与解析</a></li>
+          <li><a href="#nk-rank">数据榜单</a></li>
+          <li><a href="#nk-news">企业动态</a></li>
+          <li><a href="#nk-faq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与社区</h4>
+        <ul>
+          <li><a href="#nk-contact">投稿与反馈</a></li>
+          <li><a href="#nk-reviews">用户评价</a></li>
+          <li><a href="#nk-contact">品牌合作</a></li>
+          <li><button type="button" data-nk-share="索引映像官方网站" style="font-size:12.8px;color:inherit;padding:0;">分享本页</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="nk-footer-bottom">
+      <span>© 2026 索引映像 Index Motion 官方网站 · 版权所有</span>
+      <span>内容生态共建 · 持续运营 · 用户至上</span>
+      <span>备案号：示例备 2026-000000 号</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 回到顶部 -->
+<button class="nk-top-btn" id="nk-top-btn" type="button" aria-label="回到顶部">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<!-- Toast -->
+<div class="nk-toast" id="nk-toast" role="status" aria-live="polite"></div>
+
+<!-- 模态框：投稿 -->
+<div class="nk-modal" id="nk-modal-submit" aria-hidden="true">
+  <div class="nk-modal-card" role="dialog" aria-modal="true" aria-labelledby="nk-submit-title">
+    <button class="nk-modal-close" type="button" data-nk-close aria-label="关闭">×</button>
+    <h3 id="nk-submit-title">投稿 / 失效复核</h3>
+    <p>请填写索引编号与简要说明，我们会在 48 小时内完成首次核验。</p>
+    <input type="text" placeholder="索引编号，例如 BT 1024 7086" aria-label="索引编号">
+    <textarea rows="4" placeholder="描述你遇到的现象，或补充作品信息…" aria-label="描述"></textarea>
+    <button class="nk-btn nk-btn-primary" type="button" id="nk-submit-send">提交给官方</button>
+  </div>
+</div>
+
+<!-- 模态框：举报 -->
+<div class="nk-modal" id="nk-modal-feedback" aria-hidden="true">
+  <div class="nk-modal-card" role="dialog" aria-modal="true" aria-labelledby="nk-feedback-title">
+    <button class="nk-modal-close" type="button" data-nk-close aria-label="关闭">×</button>
+    <h3 id="nk-feedback-title">举报与反馈</h3>
+    <p>如发现违规内容、错误索引或版权问题，请在此说明，我们会尽快处理。</p>
+    <textarea rows="4" placeholder="请描述问题所在位置与具体情况…" aria-label="反馈内容"></textarea>
+    <button class="nk-btn nk-btn-amber" type="button" id="nk-feedback-send">提交反馈</button>
+  </div>
+</div>
+
+<!-- 模态框：作者档案 -->
+<div class="nk-modal" id="nk-modal-author" aria-hidden="true">
+  <div class="nk-modal-card" role="dialog" aria-modal="true" aria-labelledby="nk-author-title">
+    <button class="nk-modal-close" type="button" data-nk-close aria-label="关闭">×</button>
+    <h3 id="nk-author-title">创作者档案</h3>
+    <p id="nk-author-field"></p>
+    <p id="nk-author-desc"></p>
+    <button class="nk-btn nk-btn-ghost" type="button" data-nk-close>关闭</button>
+  </div>
+</div>
+
+<!-- 模态框：分享 -->
+<div class="nk-modal" id="nk-modal-share" aria-hidden="true">
+  <div class="nk-modal-card" role="dialog" aria-modal="true" aria-labelledby="nk-share-title">
+    <button class="nk-modal-close" type="button" data-nk-close aria-label="关闭">×</button>
+    <h3 id="nk-share-title">分享给同好</h3>
+    <p>复制页面链接，或选择常用渠道分享这份索引治理与原创影像内容。</p>
+    <div class="nk-share-row">
+      <button type="button" data-nk-copy>复制链接</button>
+      <button type="button" data-nk-share-tip="微信">微信</button>
+      <button type="button" data-nk-share-tip="微博">微博</button>
+      <button type="button" data-nk-share-tip="QQ">QQ</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* Toast */
+  var toastEl = document.getElementById('nk-toast');
+  var toastTimer = null;
+  function toast(msg){
+    if(!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add('nk-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){
+      toastEl.classList.remove('nk-show');
+    }, 2200);
+  }
+
+  /* 移动端导航 */
+  var burger = document.getElementById('nk-burger');
+  var nav = document.getElementById('nk-nav');
+  if(burger && nav){
+    burger.addEventListener('click', function(){
+      var open = nav.classList.toggle('nk-open');
+      burger.classList.toggle('nk-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        if(window.innerWidth <= 760){
+          nav.classList.remove('nk-open');
+          burger.classList.remove('nk-open');
+          burger.setAttribute('aria-expanded','false');
+        }
+      });
+    });
+  }
+
+  /* 搜索反馈 */
+  var searchInput = document.getElementById('nk-search-input');
+  var searchBtn = document.getElementById('nk-search-btn');
+  var searchFeedback = document.getElementById('nk-search-feedback');
+  function doSearch(){
+    if(!searchInput || !searchFeedback) return;
+    var q = searchInput.value.trim();
+    if(!q){
+      searchFeedback.textContent = '请输入关键词，例如「失效」「复核」「城市」。';
+      searchFeedback.classList.add('nk-show');
+      return;
+    }
+    searchFeedback.textContent = '已为你检索「' + q + '」，相关条目与创作者信息将在下方内容区高亮呈现。';
+    searchFeedback.classList.add('nk-show');
+    toast('搜索已提交：' + q);
+  }
+  if(searchBtn) searchBtn.addEventListener('click', doSearch);
+  if(searchInput) searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+  });
+
+  /* 点赞 / 收藏 */
+  document.querySelectorAll('[data-nk-like]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var span = btn.querySelector('span');
+      var cur = parseInt(span.textContent, 10) || 0;
+      if(btn.classList.contains('nk-liked')){
+        btn.classList.remove('nk-liked');
+        span.textContent = Math.max(0, cur - 1);
+        toast('已取消点赞');
+      }else{
+        btn.classList.add('nk-liked');
+        span.textContent = cur + 1;
+        toast('点赞 +1');
+      }
+    });
+  });
+  document.querySelectorAll('[data-nk-save]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var on = btn.classList.toggle('nk-saved');
+      toast(on ? '已加入收藏' : '已取消收藏');
+    });
+  });
+
+  /* 标签筛选 */
+  var chips = document.querySelectorAll('[data-nk-filter]');
+  var cards = document.querySelectorAll('#nk-feed-list .nk-vcard');
+  chips.forEach(function(chip){
+    chip.addEventListener('click', function(){
+      chips.forEach(function(c){ c.classList.remove('nk-on'); });
+      chip.classList.add('nk-on');
+      var f = chip.getAttribute('data-nk-filter');
+      cards.forEach(function(card){
+        var cat = card.getAttribute('data-nk-cat') || '';
+        var show = (f === 'all') || (cat === f);
+        card.style.display = show ? '' : 'none';
+      });
+      toast('已筛选：' + chip.textContent);
+    });
+  });
+
+  /* 模态框 */
+  var modals = {};
+  ['submit','feedback','author','share'].forEach(function(k){
+    modals[k] = document.getElementById('nk-modal-' + k);
+  });
+  function openModal(key){
+    var m = modals[key];
+    if(!m) return;
+    m.classList.add('nk-open');
+    m.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeAllModals(){
+    Object.keys(modals).forEach(function(k){
+      var m = modals[k];
+      if(m){ m.classList.remove('nk-open'); m.setAttribute('aria-hidden','true'); }
+    });
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('[data-nk-modal]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      openModal(btn.getAttribute('data-nk-modal'));
+    });
+  });
+  document.querySelectorAll('[data-nk-close]').forEach(function(btn){
+    btn.addEventListener('click', closeAllModals);
+  });
+  Object.keys(modals).forEach(function(k){
+    var m = modals[k];
+    if(!m) return;
+    m.addEventListener('click', function(e){
+      if(e.target === m) closeAllModals();
+    });
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') closeAllModals();
+  });
+
+  /* 作者档案 */
+  document.querySelectorAll('[data-nk-author]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var raw = btn.getAttribute('data-nk-author') || '';
+      var parts = raw.split('|');
+      var title = document.getElementById('nk-author-title');
+      var field = document.getElementById('nk-author-field');
+      var desc = document.getElementById('nk-author-desc');
+      if(title) title.textContent = parts[0] || '创作者档案';
+      if(field) field.textContent = parts[1] || '';
+      if(desc) desc.textContent = parts[2] || '';
+      openModal('author');
+    });
+  });
+
+  /* 分享 */
+  document.querySelectorAll('[data-nk-share]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      openModal('share');
+    });
+  });
+  document.querySelectorAll('[data-nk-share-tip]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var ch = btn.getAttribute('data-nk-share-tip');
+      toast('已生成' + ch + '分享卡片');
+    });
+  });
+  document.querySelectorAll('[data-nk-copy]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var link = 'https://indexmotion.example/';
+      function done(){ toast('链接已复制到剪贴板'); }
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(link).then(done).catch(function(){ toast('复制失败，请手动选择链接'); });
+      }else{
+        toast('链接已生成：' + link);
+      }
+    });
+  });
+
+  /* 提交 / 反馈按钮 */
+  var submitSend = document.getElementById('nk-submit-send');
+  if(submitSend) submitSend.addEventListener('click', function(){
+    closeAllModals();
+    toast('提交成功，官方将在 48 小时内核验');
+  });
+  var feedbackSend = document.getElementById('nk-feedback-send');
+  if(feedbackSend) feedbackSend.addEventListener('click', function(){
+    closeAllModals();
+    toast('反馈已收到，感谢你的监督');
+  });
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('nk-top-btn');
+  window.addEventListener('scroll', function(){
+    if(!topBtn) return;
+    if(window.scrollY > 480) topBtn.classList.add('nk-show');
+    else topBtn.classList.remove('nk-show');
+  }, {passive:true});
+  if(topBtn) topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+})();
+</script>
+
+</body>
+                                                                  </html>
